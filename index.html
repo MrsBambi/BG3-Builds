@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <header>
             <img src="/images/logo.png">
         </header>
-        <nav>
-            <div class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="iniciosesion.html">Inicio Sesion</a>
-                <a href="registro.html">Registrarse</a>
-
-            </div>
-        </nav>
-        <br>
-        <article>
-            <div>
-                
-            </div>
-        </article>
-        <footer class="footer">
-            <div class="columnas">
-                
-                <div>
-                    <p>Redes Sociales</p>
+        <div id="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Builds <i class="abajo"></i></a>
+                    
                     <ul>
-                        <li class="lista">
-                            <a href="http://" class="menu">Instagram</a>
-                        </li>
-                        <li class="lista">
-                            <a href="http://" class="menu">Twitter</a>
-                        </li>
+                        <li><a href="#">Mas Recientes</a></li>
+                        <li><a href="#">Mejor Valoradas</a></li>
+                        <li><a href="#">Populares </a></li>
+                    </ul>        
+                    </li>
+                    <li><a href="iniciosesion.html" >Cuenta<i class="abajo"></i></a>
+                    <ul>
+                        <li><a href="iniciosesion.html">Iniciar Sesion</a></li>
+                        <li><a href="registro.html">Registrarse</a></li>
                     </ul>
-                </div>
+                    </li>
+                   
+                </ul>
+            </nav> 
+        </div>
+        <div class="papel">
+            <article>
                 <div>
+                    <h1>Noticias</h1>
+                    <div class="articulo" onclick="mostrarOcultar()">
+                        <h3>¡¡Bienvenidos al comienzo de Baldurs Builds!!</h3>
+                        <p>
+                            <p>¡Bienvenido a Baldur's Builds!</p>
 
+                            <p>
+                                En Baldur's Builds, nos dedicamos a proporcionarte las herramientas y recursos que necesitas para crear tus proyectos de manera excepcional. Ya sea que estés construyendo tu próximo sitio web, desarrollando una aplicación innovadora o creando contenido creativo, estamos aquí para ayudarte en cada paso del camino.
+                            </p>
+                            <p>
+                                Nuestro objetivo es ofrecerte inspiración, conocimientos y soluciones prácticas para que puedas alcanzar tus metas con confianza. Desde tutoriales y guías detalladas hasta consejos expertos y recomendaciones de productos, estamos comprometidos a brindarte la información y el apoyo que necesitas para triunfar en tus proyectos.
+                            </p>
+                            <p>
+                                Explora nuestra amplia gama de recursos, desde herramientas de desarrollo hasta consejos de diseño, y descubre cómo puedes llevar tus ideas al siguiente nivel. Únete a nuestra comunidad de creadores apasionados y comparte tus experiencias, aprendizajes y logros con otros que comparten tu pasión por la construcción.
+                            </p>
+                            <p>
+                                En Baldur's Builds, estamos aquí para ayudarte a hacer realidad tus sueños creativos. ¡Gracias por elegirnos como tu socio en el viaje hacia el éxito!
+                            </p>
+                        </p>
+                    </div>
+                    <br>
+                    <h1>
+                        Builds Recientes
+                    </h1>
+                    <br>
+                    <div class="articulo">
+                        <a href="">
+                            <h3>
+                                Build Arquero One Shot
+                            </h3>
+                            <p>
+                                Build para hacer One Shot de Jefes facil usando esta mezcla de las clases: Picaro, Ranger y Bardo 
+                            </p>
+                        </a>
+                    </div>
+                    <br>
                 </div>
-                <div>
-
-                </div>
-            </div>
-        </footer>
+            </article>
+        </div>
+        <br>
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Inicio</a></li>
+                    <li class="list-inline-item"><a href="#">Preguntas Frecuentes</a></li>
+                    <li class="list-inline-item"><a href="#">Iniciar Sesión</a></li>
+                    <li class="list-inline-item"><a href="#">Registrarse</a></li>
+                </ul>
+                <p class="copyright">Baldurs Builds © 2024</p>
+            </footer>
+        </div>
+        <script>
+            function mostrarOcultar() {
+                var div = document.getElementById('articulo');
+                if (div.style.display === 'none') {
+                    div.style.display = 'block'; // Muestra el div si está oculto
+                } else {
+                    div.style.display = 'none'; // Oculta el div si está visible
+                }
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
