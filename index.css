@@ -20,6 +20,20 @@ body {
     text-align: center;
   }
   
+  /* Css para header */
+
+header {
+    width: 1000px; /* Ancho del contenedor */
+    height: 300px; /* Alto del contenedor */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+header img {
+    max-width: 100%;
+    max-height: 100%; 
+}
 
 
   /* Css para el Nav/Menu */
