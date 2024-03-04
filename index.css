@@ -5,6 +5,17 @@ body {
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+
 }
 
 header {
@@ -26,11 +37,16 @@ div {
     width: 90%;
 }
 
+div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+    transition: box-shadow 0.5s ease 0s;
+}
+
 article > div {
     height: 80%;
 }
 
-nav > div > a{
+a{
     color: white;
     display: inline;
     border: 1px ;
@@ -52,3 +68,65 @@ a:hover {
     align-items: center;
     
 }
+
+.lista{
+    border:  1px solid;
+    border-radius: 30px;
+    margin: 5px 0;
+    margin-left: 5%;
+    width: 90%;
+    transition: background-color 0.4s ease 0s;
+    transition: color 0.4s ease 0s;
+}
+
+.lista:hover {
+    background-color:rgba(83, 71, 71, 0.801) ;
+    color: black;
+}
+
+.lista > a {
+    border-radius: 30px;
+    border: 1px solid;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+footer {
+    flex: 1;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 65%;
+}
+
+.columnas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Distribuye en tres columnas de tamaño igual */
+        grid-gap: 10px; /* Espacio entre los elementos */
+}
+
+.columnas > div {
+    height: 90%;
+    margin-top: 2.5%;
+    transition: background-color 0.7s ease 0s;
+    transition: color 0.7s ease 0s;
+}
+
+
+
+.footer {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    
+}
+
+.contactanos {
+    flex: 1; /* Distribuye el espacio disponible igualmente entre los elementos */
+    padding: 10px;
+    width: calc(33.33% - 20px); /* Ajusta el ancho de cada elemento */
+    margin: 5px; /* Espacio entre los elementos */
+}
+
